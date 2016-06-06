@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type='text/javascript'
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script type='text/javascript' src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='index.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a href="#" class='navbar-brand'>Students</a>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container student-listing-container">
+        <h2>Students</h2>
+        <div class="alert alert-success">
+          User was successfully created
+        </div>
+        <table class=" table table-hover">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anar</td>
+              <td>Mamedov</td>
+              <td>
+                <a href="#" class="btn btn-default">Show</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Ahmud</td>
+              <td>Alipashaev</td>
+              <td>
+                <a href="#" class="btn btn-default">Show</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </td>
+            </tr><tr>
+              <td>Nurzanbay</td>
+              <td>Akaev</td>
+              <td>
+                <a href="#" class="btn btn-default">Show</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class='btn btn-success'>Add Student</a>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container student-data-container">
+        <h2>Student Profile</h1>
+        <div class="alert alert-success">
+          User was successfully updated
+        </div>
+        <div class="panel panel-default">
+			    <div class="panel-body">
+            <div class="row">
+              <div class="student-data col-xs-12 col-sm-8">
+                <div class="student-data-group">
+                  <b>Full Name: </b>
+                  <span class='student-full-name'>Ahmud Alipashaev</span>
+                </div>
+                <div class="student-data-group">
+                  <b>Age: </b>
+                  <span class='student-age'>53</span>
+                </div>
+                <div class="student-data-group">
+                  <b>At Universiry: </b>
+                  <span class='student-at-university'>Yes</span>
+                </div>
+                <div class="student-data-group">
+                  <div class="course-group">
+                    <b>Course1: </b>
+                    <span class='student-course'>Freestyle wrestling</span>
+                  </div>
+                  <div class="course-group">
+                    <b>Course2: </b>
+                    <span class='student-course'>UI design</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href='#' class='btn btn-primary'>Edit</a>
+        <a href='#' class='btn btn-default'>Back</a>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container student-form-container">
+        <h2>Add Student</h2>
+        <div class="alert alert-danger">
+          <ul class='list-group'>
+            <li class='list-group-item'>Error 1</li>
+            <li class='list-group-item'>Error 2</li>
+          </ul>
+        </div>
+        <form>
+          <div class="form-group">
+            <label>First Name: </label>
+            <input class="form-control first-name" name='first_name'>
+          </div>
+          <div class="form-group">
+            <label>Last Name: </label>
+            <input class="form-control last-name" name='last_name'>
+          </div>
+          <div class='form-group'>
+            <label>Age: </label>
+            <select name='age' class='form-control student-age'>
+              <option>Select age</option>
+            </select>
+          </div>
+          <div class='form-group'>
+            <label>
+              <input class='student-at-university'
+                     name='at_university' type='checkbox'>
+              At university:
+            </label>
+          </div>
+          <div class='form-group'>
+            <label>Course 1:</label>
+            <input name='courses[]' class='form-control student-course'>
+            <a href='#' class='remove-course'>Remove course</a>
+          </div>
+          <div class='form-group'>
+            <label>Course 2:</label>
+            <input name='courses[]' class='form-control student-course'>
+            <a href='#' class='remove-course'>Remove course</a>
+          </div>
+          <div class='form-group'>
+            <a href='#' class='add-course'>Add Course</a>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+          <a href='#' class='btn btn-default'>Back</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
